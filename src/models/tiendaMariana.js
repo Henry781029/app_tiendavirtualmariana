@@ -7,5 +7,6 @@ const tiendaMariana = new Schema({
     country:{type:String, require:true}
 });
 
-const store = mongoose.model('storeMariana',tiendaMariana);
-export default store;
+/*const store = mongoose.model('storeMariana',tiendaMariana);
+export default store;*/
+module.exports = mongoose.model('storeMariana', tiendaMariana);
